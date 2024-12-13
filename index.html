@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="A simple poem sharing platform">
+    <title>Poem Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Caveat:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Poem Garden</h1>
+        <p>Creating Gardens out of Poems</p>
+        <!-- Updated Navigation -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="workshop.html">Poetry Workshop</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inspiration-section">
+            <h2>Inspiration Corner</h2>
+            <p class="inspiration-quote" id="inspirationQuote">"Poetry is when an emotion has found its thought and the thought has found words." – Robert Frost</p>
+            <p class="prompt" id="inspirationPrompt">Prompt: Write a few lines about the feeling of sunrise.</p>
+            <button id="newInspirationBtn">New Inspiration</button>
+        </section>
+
+        <section class="form-section">
+            <h2>Share Your Poem</h2>
+            <form id="poemForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter poem title" required />
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Your name or pen name" required />
+
+                <label for="content">Poem:</label>
+                <textarea id="content" name="content" rows="6" placeholder="Write your poem here..." required></textarea>
+
+                <button type="submit">Add Poem</button>
+            </form>
+        </section>
+
+        <section class="poem-list-section">
+            <h2>Poem Collection</h2>
+            <div id="poemList" class="poem-list">
+                <!-- Poems and their comments will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by You &bull; Powered by You!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    background: #FFF9F4; /* Warm cream background */
+    color: #4B2A1A; /* Warm brown text */
+}
+
+header {
+    background: #FAE5D3; /* Pale apricot */
+    color: #4B2A1A;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #E2C9B6;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Merriweather', serif; /* Warm, literary feel */
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-family: 'Caveat', cursive; /* Handwritten accent */
+    font-size: 1.2rem;
+    color: #6D4533;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+/* Inspiration Corner */
+.inspiration-section {
+    flex: 1 1 100%;
+    background: #FCEEE3;
+    border: 1px solid #E2C9B6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.inspiration-section h2 {
+    font-family: 'Merriweather', serif;
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #4B2A1A;
+    border-bottom: 2px solid #E2C9B6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.inspiration-quote, .prompt {
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+}
+
+/* Form and Poem List Sections */
+.form-section, .poem-list-section {
+    flex: 1 1 45%;
+    background: #FAF3EC;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #E2C9B6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+    margin-top: 0;
+    font-family: 'Merriweather', serif;
+    font-size: 1.8rem;
+    color: #4B2A1A;
+    border-bottom: 2px solid #E2C9B6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #E2C9B6;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: #FFF9F4;
+    color: #4B2A1A;
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: #B85C38; /* Warm rustic orange */
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+    font-family: 'Merriweather', serif;
+}
+
+form button:hover {
+    background: #9F4F30;
+}
+
+.poem-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.poem {
+    border: 1px solid #E2C9B6;
+    padding: 1rem;
+    border-radius: 4px;
+    background: #FFF9F4;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.poem-title {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    color: #4B2A1A;
+}
+
+.poem-author {
+    font-size: 0.9rem;
+    color: #6D4533;
+    margin: 0.25rem 0 1rem;
+    font-style: italic;
+    font-family: 'Caveat', cursive;
+}
+
+.poem-content {
+    white-space: pre-wrap;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.comment-toggle {
+    background: none;
+    border: none;
+    color: #B85C38;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+}
+
+.comment-section {
+    display: none;
+    margin-top: 1rem;
+    border-top: 1px solid #E2C9B6;
+    padding-top: 1rem;
+}
+
+.comment-section.show {
+    display: block;
+}
+
+.comment-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.comment-list li {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px dashed #E2C9B6;
+    padding-bottom: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color: #4B2A1A;
+}
+
+.comment-text {
+    font-style: italic;
+    color: #6D4533;
+}
+
+.add-comment-form {
+    margin-top: 1rem;
+}
+
+.add-comment-form input, .add-comment-form textarea {
+    margin-bottom: 0.5rem;
+    background: #FAF3EC;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #4B2A1A;
+    background: #FAE5D3;
+    border-top: 2px solid #E2C9B6;
+    font-family: 'Caveat', cursive;
+}

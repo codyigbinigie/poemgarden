@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Contact us at Poem Garden">
+    <title>Contact Us - Poem Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you!</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="workshop.html">Poetry Workshop</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="workshop-section">
+            <h2>Get in Touch</h2>
+            <p>Have a question, feedback, or just want to say hello? Feel free to reach out.</p>
+            <p>We value your input and look forward to hearing your thoughts on improving Poem Garden.</p>
+        </section>
+
+        <section class="workshop-section">
+            <h2>Contact Form</h2>
+            <form class="contact-form">
+                <label for="contactName">Your Name:</label>
+                <input type="text" id="contactName" name="contactName" placeholder="e.g., Jane Doe" required />
+
+                <label for="contactEmail">Your Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" placeholder="e.g., jane@example.com" required />
+
+                <label for="contactMessage">Your Message:</label>
+                <textarea id="contactMessage" name="contactMessage" rows="6" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p class="note">*This form does not actually send an email. Integrate with a backend service to process messages.</p>
+        </section>
+
+        <section class="workshop-section">
+            <h2>Other Ways to Connect</h2>
+            <ul>
+                <li>Email us at: <a href="mailto:info@poemgarden.com">info@poemgarden.com</a></li>
+                <li>Follow us on social media (placeholder links): 
+                    <a href="#" target="_blank">Instagram</a> &bull; 
+                    <a href="#" target="_blank">Twitter</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by You &bull; We’re here to listen and help</p>
+    </footer>
+</body>
+</html>
